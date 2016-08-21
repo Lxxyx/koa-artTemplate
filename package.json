@@ -1,7 +1,7 @@
 {
   "name": "koa-artTemplate",
   "version": "1.0.1",
-  "description": "koa artTemplate",
+  "description": "koa artTemplate middleware",
   "main": "index.js",
   "scripts": {
     "test": "nyc ava",

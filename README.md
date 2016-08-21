@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/Lxxyx/koa-artTemplate.svg?branch=master)](https://travis-ci.org/Lxxyx/koa-artTemplate)
 [![codecov](https://codecov.io/gh/Lxxyx/koa-artTemplate/branch/master/graph/badge.svg)](https://codecov.io/gh/Lxxyx/koa-artTemplate)
 # koa-artTemplate
-koa-artTemplate is a koa middware for artTemplate
+koa-artTemplate is a koa middleware for artTemplate
 
 ## install
 
