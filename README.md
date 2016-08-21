@@ -5,11 +5,21 @@ koa-artTemplate is a koa middleware for artTemplate
 
 ## install
 
+Koa1: 
+
 ```javascript
 npm i koa-artTemplate --save
 ```
 
+Koa2: 
+
+```javascript
+npm i koa-artTemplate@next --save
+```
+
 ## usage:
+
+### Koa1
 
 ```javascript
 var koa = require('koa')
@@ -23,6 +33,23 @@ app.use(function *(next) {
   this.body = this.render('index')
 })
 ```
+
+### Koa2
+
+```javascript
+import Koa from 'koa'
+import koaArt from 'koa-artTemplate'
+import path from 'path'
+
+const app = new koa()
+
+app.use(koaArt(path.resolve(__dirname, 'views/')))
+
+app.use((ctx, next) => {
+  ctx.body = ctx.render('index')
+})
+```
+
 
 ## Api
 ### koaArt(viewsPath,extname)
