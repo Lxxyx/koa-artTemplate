@@ -3,6 +3,12 @@
 # koa-artTemplate
 koa-artTemplate is a koa middware for artTemplate
 
+## install
+
+```javascript
+npm i koa-artTemplate --save
+```
+
 ## usage:
 
 ```javascript
