@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Lxxyx/koa-artTemplate.svg?branch=master)](https://travis-ci.org/Lxxyx/koa-artTemplate)
+[![codecov](https://codecov.io/gh/Lxxyx/koa-artTemplate/branch/master/graph/badge.svg)](https://codecov.io/gh/Lxxyx/koa-artTemplate)
 # koa-artTemplate
 koa-artTemplate is a koa middware for artTemplate
 
@@ -36,3 +38,12 @@ the data need to be render
 
 ### template usage:
 [artTemplate syntax:simple](https://github.com/aui/artTemplate/wiki/syntax:simple)
+
+### why artTemplate
+因为不喜欢ejs的风格，而喜欢handlebars的mustache风格。
+但handlebars的比较功能非常弱，只能自己注册helper，但是在koa中一个一个去注册就太麻烦了。
+于是遇上了artTemplate。但专门支持koa的artTemplate只有一个。所以就自己写了。
+
+### 收获
+主程序很简单，就十几行，但这是自己写的第一个koa中间件，符合自己风格的。
+也是第一个采用TDD方式书写的插件，先写测试再写代码，确实能避免很多边角情况的发生～
