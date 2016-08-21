@@ -9,8 +9,9 @@ function render (filename, data) {
 module.exports = function (dir, ext) {
   template.config('base', dir)
   template.config('extname', ext || '.html')
-  return function *(next) {
-    this.render = render
-    yield next
+  return function (ctx, next) {
+    if (ctx.render) return next()
+    ctx.render = render
+    next()
   }
 }
