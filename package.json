@@ -1,0 +1,36 @@
+{
+  "name": "koaarttemplate",
+  "version": "1.0.0",
+  "description": "koa artTemplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lxxyx/koa-artTemplate.git"
+  },
+  "keywords": [
+    "koa",
+    "artTemplate"
+  ],
+  "author": "Lxxyx",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Lxxyx/koa-artTemplate/issues"
+  },
+  "homepage": "https://github.com/Lxxyx/koa-artTemplate#readme",
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "babel-register": "^6.11.6",
+    "koa": "^1.2.1",
+    "supertest": "^2.0.0",
+    "supertest-as-promised": "^4.0.0"
+  },
+  "dependencies": {
+    "art-template": "^3.0.3"
+  },
+  "ava": {
+    "require": "babel-register"
+  }
+}
