@@ -4,7 +4,8 @@
   "description": "koa artTemplate",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "nyc ava",
+    "cover": "nyc report --reporter=lcov"
   },
   "repository": {
     "type": "git",
@@ -29,8 +30,5 @@
   },
   "dependencies": {
     "art-template": "^3.0.3"
-  },
-  "ava": {
-    "require": "babel-register"
   }
 }
