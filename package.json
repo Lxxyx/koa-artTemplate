@@ -7,10 +7,6 @@
     "test": "nyc ava",
     "cover": "nyc report --reporter=lcov"
   },
-  "dist-tags": {
-    "latest": "1.0.3",
-    "next": "2.0.4"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Lxxyx/koa-artTemplate.git"
