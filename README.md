@@ -1,26 +1,29 @@
 [![Build Status](https://travis-ci.org/Lxxyx/koa-artTemplate.svg?branch=master)](https://travis-ci.org/Lxxyx/koa-artTemplate)
-[![codecov](https://codecov.io/gh/Lxxyx/koa-artTemplate/branch/master/graph/badge.svg)](https://codecov.io/gh/Lxxyx/koa-artTemplate)
-# koa-artTemplate
+[![codecov](https://codecov.io/gh/Lxxyx/koa-artTemplate/branch/next/graph/badge.svg)](https://codecov.io/gh/Lxxyx/koa-artTemplate)
+# koa-artTemplate for koa2
 koa-artTemplate is a koa middleware for artTemplate
 
 ## install
 
 ```javascript
-npm i koa-artTemplate --save
+npm i koa-artTemplate@next --save
 ```
 
 ## usage:
 
+### Koa2
+
 ```javascript
-var koa = require('koa')
-var koaArt = require('koa-artTemplate')
+import Koa from 'koa'
+import koaArt from 'koa-artTemplate'
+import path from 'path'
 
-var app = new koa()
+const app = new koa()
 
-app.use(koaArt('../views'))
+app.use(koaArt(path.resolve(__dirname, 'views/')))
 
-app.use(function *(next) {
-  this.body = this.render('index')
+app.use((ctx, next) => {
+  ctx.body = ctx.render('index')
 })
 ```
 

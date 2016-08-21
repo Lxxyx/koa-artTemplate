@@ -1,12 +1,15 @@
 {
   "name": "koa-artTemplate",
-  "version": "2.0.1",
+  "version": "2.0.6",
   "description": "koa artTemplate middleware",
   "main": "index.js",
   "scripts": {
     "test": "nyc ava",
-    "cover": "nyc report --reporter=lcov",
-    "publish": "npm publish --tag=next"
+    "cover": "nyc report --reporter=lcov"
+  },
+  "dist-tags": {
+    "latest": "1.0.3",
+    "next": "2.0.4"
   },
   "repository": {
     "type": "git",
@@ -16,6 +19,9 @@
     "koa",
     "artTemplate"
   ],
+  "publishConfig": {
+    "tag": "next"
+  },
   "author": "Lxxyx",
   "license": "Apache-2.0",
   "bugs": {
