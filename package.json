@@ -25,6 +25,7 @@
     "ava": "^0.16.0",
     "babel-register": "^6.11.6",
     "koa": "^1.2.1",
+    "nyc": "^8.1.0",
     "supertest": "^2.0.0",
     "supertest-as-promised": "^4.0.0"
   },
