@@ -30,7 +30,10 @@
     "koa": "^2.0.0-alpha.5",
     "nyc": "^8.1.0",
     "supertest": "^2.0.0",
-    "supertest-as-promised": "^4.0.0"
+    "supertest-as-promised": "^4.0.0",
+    "eslint": "*",
+    "babel-eslint": "*",
+    "eslint-config-vue": "*"
   },
   "dependencies": {
     "art-template": "^3.0.3"

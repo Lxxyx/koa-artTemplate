@@ -1,5 +1,4 @@
 const template = require('art-template')
-const fs = require('fs')
 
 function render (filename, data) {
   return template(filename, data)
